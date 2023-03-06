@@ -1,0 +1,40 @@
+# Multi Yaml documents
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp1
+  labels:
+    name: myapp1
+spec:
+  containers:
+  - name: myapp1
+    image: myapp1
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8081
+
+# seperate this using three dashes
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp2
+  labels:
+    name: myapp2
+spec:
+  containers:
+  - name: myapp2
+    image: myapp2
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8082

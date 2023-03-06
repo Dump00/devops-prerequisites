@@ -1,0 +1,16 @@
+# Multi-line Strings
+
+multilinestring: |
+  this is a multiline String
+  and this is the next line
+  and next line
+
+
+# env variables
+# ${ENV_VARIABLE_NAME}
+
+
+# Placeholders
+selector:
+  app: {{ .Values.service.app }}
+

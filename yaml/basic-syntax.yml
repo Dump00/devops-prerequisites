@@ -1,0 +1,38 @@
+# key-value pairs
+app: user-auth
+port: 9000
+version: 1.8
+
+
+# booleans
+deployed1: true
+deployed2: yes
+deployed3: no
+
+
+# Objects and attributes
+microservice:
+  app: user2-auth
+  port: 9001
+  version: 1.8
+
+
+# Lists
+
+# List of simple values
+lang:
+  - Java
+  - Python
+
+# Suppose we have list of microservices (list of objects)
+microservice2:
+  - app: user3-auth
+    port: 9001
+    version: 1.8
+  - app: cart-service
+    port: 9002
+    versions:
+    - 1.0
+    - 1.2
+    - 1.4
+
